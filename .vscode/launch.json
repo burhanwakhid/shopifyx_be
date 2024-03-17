@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Server (app.go)",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "app.go",  // Specify your Go file path
+            "args": ["start-rest-server"]  // Optional arguments (adjust as needed)
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+
+ALTER TABLE bank
+ADD COLUMN id_user INT NOT NULL;
+
+ALTER TABLE bank
+ADD CONSTRAINT fk_bank_user FOREIGN KEY (id_user) REFERENCES users(id);

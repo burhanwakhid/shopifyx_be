@@ -1,0 +1,39 @@
+APP_ENVIRONMENT: development
+APP_NAME: shopifyx_backend
+APP_PORT: 8000
+LOG_LEVEL: info
+REQUEST_TIMEOUT_SECS: 30
+
+SHOPIFYX_BACKEND_DB_MASTER: postgres://loco:loco@localhost:5432/shopifyx_db?sslmode=disable
+SHOPIFYX_BACKEND_DB_SLAVE:  postgres://loco:loco@localhost:5432/shopifyx_db?sslmode=disable
+SHOPIFYX_BACKEND_DB_LOG_LEVEL: 4
+SHOPIFYX_BACKEND_DB_MAX_LIFETIME: 1h
+SHOPIFYX_BACKEND_DB_MAX_CONNECTION: 50
+
+
+NEWRELIC_APP_NAME: SHOPIFYX_backend
+NEWRELIC_ENABLED: false
+NEW_RELIC_LICENSE_KEY: "this-is-a-dummy-key-that-has-40-characte"
+
+STATSD_AGENT: localhost
+STATSD_FLUSH_PERIOD_SECONDS: 1
+STATSD_PORT: 8125
+STATSD_PREFIX: gemini
+
+SHOPIFYX_BACKEND_REDIS_ADDRS: localhost:6379
+
+SHOPIFYX_BACKEND_LOCAL_CACHE_DEFAULT_EXPIRATION_TIME: 1m
+SHOPIFYX_BACKEND_LOCAL_CACHE_CLEANUP_INTERVAL: 1m
+SHOPIFYX_BACKEND_LOCK_DEFAULT_EXPIRATION_TIME: 1m
+
+#JWT CONFIG
+JWT_SECRET: "secret"
+JWT_PIN_SECRET: 'secret'
+
+
+
+
+TRANSLATOR_CONFIG: '{"error_file_path":"./files/error_translation/","notification_file_path":"./files/notif_template/staging","email_file_path":"./files/email_template/staging"}'
+
+# burhanudin.nugroho@Burhanudin-Wakhid-Nugroho shopifyx_backend % migrate -database "postgres://loco:loco@localhost:5432/shopifyx_db?sslmode=disable" -path db/migrations force 5
+# burhanudin.nugroho@Burhanudin-Wakhid-Nugroho shopifyx_backend % migrate -database "postgres://loco:loco@localhost:5432/shopifyx_db?sslmode=disable" -path db/migrations up    
