@@ -30,8 +30,6 @@ SHOPIFYX_BACKEND_LOCK_DEFAULT_EXPIRATION_TIME: 1m
 JWT_SECRET: "secret"
 JWT_PIN_SECRET: 'secret'
 
-S3_SECRET_KEY: "ZXnztIrywJn7ziR6TawS/DyCKXJYUls7F0QX7PGY"
-S3_ID: "AKIAYFGKTK6VHJB4FQPW"
 
 
 TRANSLATOR_CONFIG: '{"error_file_path":"./files/error_translation/","notification_file_path":"./files/notif_template/staging","email_file_path":"./files/email_template/staging"}'
